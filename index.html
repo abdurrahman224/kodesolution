@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amiso | web design agency</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        background: #000;
+        color: #fff;
+      }
+      .swiper-slide img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+      }
+      @keyframes slide-down {
+        0% {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .slide-text {
+        animation: slide-down 1s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Header -->
+    <header class="bg-black text-white text-sm">
+      <div class="hidden md:flex  justify-between items-center px-10 py-2">
+        <ul class="flex gap-6">
+          <li>
+            <i class="fa-solid fa-envelope text-red-600"></i>
+            eedhelp@company.com
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot text-red-600"></i> 88 Broklyn
+            Golden Street. New York
+          </li>
+        </ul>
+        <ul class="flex gap-4">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-pinterest"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main Header / Navbar -->
+    <div
+      class="absolute left-0 w-full h-20 z-30 bg-white/15 backdrop-blur-md border-b border-white/20 shadow-md"
+    >
+      <div class="flex justify-between items-center px-4 py-2">
+        <!-- Logo -->
+        <div>
+          <a href="#">
+            <img
+              src="https://html.kodesolution.com/2023/amiso-html/images/logo.png"
+              alt="logo"
+              class="h-12"
+            />
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex gap-6 font-semibold text-lg items-center">
+          <li class="relative group">
+            <a
+              href="#"
+              class="flex items-center hover:text-red-500 cursor-pointer"
+            >
+              Home <i class="fa-solid fa-angle-down ml-1 text-sm"></i>
+            </a>
+            <ul
+              class="absolute left-0 top-10 hidden group-hover:block bg-black text-white shadow-lg rounded-lg w-44 p-2 space-y-2 transition-all duration-300"
+            >
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 2</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 3</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative group">
+            <a
+              href="#"
+              class="flex items-center hover:text-red-500 cursor-pointer"
+            >
+              Services <i class="fa-solid fa-angle-down ml-1 text-sm"></i>
+            </a>
+            <ul
+              class="absolute left-0 top-10 hidden group-hover:block bg-black text-white shadow-lg rounded-lg w-44 p-2 space-y-2 transition-all duration-300"
+            >
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 2</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 3</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative group">
+            <a
+              href="#"
+              class="flex items-center hover:text-red-500 cursor-pointer"
+            >
+              Shop <i class="fa-solid fa-angle-down ml-1 text-sm"></i>
+            </a>
+            <ul
+              class="absolute left-0 top-10 hidden group-hover:block bg-black text-white shadow-lg rounded-lg w-44 p-2 space-y-2 transition-all duration-300"
+            >
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 2</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 3</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative group">
+            <a
+              href="#"
+              class="flex items-center hover:text-red-500 cursor-pointer"
+            >
+              News <i class="fa-solid fa-angle-down ml-1 text-sm"></i>
+            </a>
+            <ul
+              class="absolute left-0 top-10 hidden group-hover:block bg-black text-white shadow-lg rounded-lg w-44 p-2 space-y-2 transition-all duration-300"
+            >
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 2</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 3</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative group">
+            <a
+              href="#"
+              class="flex items-center hover:text-red-500 cursor-pointer"
+            >
+              Pages <i class="fa-solid fa-angle-down ml-1 text-sm"></i>
+            </a>
+            <ul
+              class="absolute left-0 top-10 hidden group-hover:block bg-black text-white shadow-lg rounded-lg w-44 p-2 space-y-2 transition-all duration-300"
+            >
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 2</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="#" class="hover:text-red-500">Services</a>
+          
+          </li>
+          <li><a href="#" class="hover:text-red-500">Shop</a></li>
+          <li><a href="#" class="hover:text-red-500">News</a></li>
+          <li><a href="#" class="hover:text-red-500">Get in Touch</a></li>
+        </ul>
+
+        <!-- Desktop Right Section -->
+        <div class="hidden lg:flex items-center space-x-6">
+          <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
+          <div class="flex items-center space-x-3">
+            <button class="btn btn-circle btn-error text-white">📞</button>
+            <div class="leading-tight">
+              <p class="text-sm">Call Anytime</p>
+              <p class="font-semibold">01763449933</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Sidebar -->
+    <div
+      id="mobile-menu"
+      class="fixed md:hidden top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50"
+    >
+      <div class="flex justify-between items-center px-4 py-3 border-b">
+        <h2 class="text-lg font-semibold">Menu</h2>
+        <button id="mobile-menu-close" class="text-xl">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="p-4 space-y-4 text-black">
+         <li class="relative group">
+            <a
+              href="#"
+              class="flex items-center hover:text-red-500 cursor-pointer"
+            >
+              Home <i class="fa-solid fa-angle-down ml-1 text-sm"></i>
+            </a>
+            <ul
+              class="absolute left-0 top-10 hidden group-hover:block bg-black text-white shadow-lg rounded-lg w-44 p-2 space-y-2 transition-all duration-300"
+            >
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 2</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 3</a
+                >
+              </li>
+            </ul>
+          </li>
+        <li><a href="#" class="block hover:text-red-500">Pages</a></li>
+           <li class="relative group">
+            <a
+              href="#"
+              class="flex items-center hover:text-red-500 cursor-pointer"
+            >
+              Services <i class="fa-solid fa-angle-down ml-1 text-sm"></i>
+            </a>
+            <ul
+              class="absolute left-0 top-10 hidden group-hover:block bg-black text-white shadow-lg rounded-lg w-44 p-2 space-y-2 transition-all duration-300"
+            >
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 2</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-3 py-1 hover:bg-red-500 rounded"
+                  >Test 3</a
+                >
+              </li>
+            </ul>
+          </li>
+        <li><a href="#" class="block hover:text-red-500">Shop</a></li>
+        <li><a href="#" class="block hover:text-red-500">News</a></li>
+        <li><a href="#" class="block hover:text-red-500">Get in Touch</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Swiper Slider -->
+    <main>
+      <div class="swiper mySwiper min-h-screen">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide relative flex items-center justify-center">
+            <img src="https://picsum.photos/id/1015/1600/800" alt="" />
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <div class="absolute z-20 text-center slide-text px-4">
+              <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                We provide best design solution in town
+              </h1>
+              <button class="btn bg-amber-700">Get Started</button>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide relative flex items-center justify-center">
+            <img src="https://picsum.photos/id/1016/1600/800" alt="" />
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <div class="absolute z-20 text-center slide-text px-4">
+              <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                We provide best design solution in town
+              </h1>
+              <button class="btn bg-amber-700">Get Started</button>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide relative flex items-center justify-center">
+            <img src="https://picsum.photos/id/1018/1600/800" alt="" />
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <div class="absolute z-20 text-center slide-text px-4">
+              <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                We provide best design solution in town
+              </h1>
+              <button class="btn bg-amber-700">Get Started</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination & Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // Swiper Init
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: { delay: 4000, disableOnInteraction: false },
+        pagination: { el: ".swiper-pagination", clickable: true },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // Mobile Menu Toggle (works toggle)
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("translate-x-full");
+      });
+
+      const closeBtn = document.getElementById("mobile-menu-close");
+      closeBtn.addEventListener("click", () => {
+        menu.classList.add("translate-x-full");
+      });
+    </script>
+  </body>
+</html>
